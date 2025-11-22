@@ -10,13 +10,14 @@ export default function Navbar() {
         <CustomLink to="/hiw">How it works</CustomLink>
         <CustomLink to="/faq">FAQ</CustomLink>
         <CustomLink to="/about">About</CustomLink>
-        <li className="dropdown">
+        <CustomLink to="/account/LogIn">Account</CustomLink>
+        {/* <li className="dropdown">
           <Link to="/account" className="dropdown-trigger">Account</Link>
           <ul className="dropdown-menu">
             <CustomLink to="/account/LogIn">Log in</CustomLink>
             <CustomLink to="/account/SignUp">Sign up</CustomLink>
           </ul>
-        </li>
+        </li> */}
       </ul>
     </nav>
   )
