@@ -11,6 +11,11 @@
   align-items: stretch;
   gap: 2rem;
   padding: 0 1rem;
+
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
 .nav > ul {
@@ -49,10 +54,12 @@
 
 body {
   margin: 0;
-  background-image: url('/src/assets/images/sunset1.jpg');
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+html {
+  overflow-x: hidden;
 }
 
 .container {
@@ -110,6 +117,72 @@ body {
 
 .dropdown-menu li a:hover {
   background-color: #f9f9f9;
+}
+
+.hero-title {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-size: 85px;
+  font-weight: bold;
+  color: #FFF;
+}
+
+.hero-paragraph {
+  color: #FFF;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-size: large;
+}
+
+.hero-header {
+  color: #000;
+  font-size: 50px;
+}
+
+.break-size {
+  size: 10px;
+}
+
+.step-box {
+  flex: 1; 
+
+  background-color: #eb658060;
+  border: 1px solid #e0e0e0;
+  border-radius: 20px;
+  padding: 20px;
+  
+  text-align: center;
+  
+  max-width: 350px; 
+}
+
+.step-box h4 {
+  color: #333;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-image: url('/src/assets/images/sunset1.jpg');
+  background-size: cover;
+  background-position: 50% -250px;
+  background-attachment: fixed;
+  height: 700px;
+}
+
+.hero-button-container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.hero-sub-container {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  /* max-width: 900px;
+  width: 100%; */
 }
 
 @theme inline {

@@ -13,7 +13,7 @@ function App() {
     <div className="flex flex-col min-h-svh">
       
       <Navbar />
-      <main className="flex flex-grow items-center justify-center"> 
+      {/* <main className="flex flex-grow items-center justify-center">  */}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/hiw" element={<Hiw />} />
@@ -23,7 +23,7 @@ function App() {
           <Route path="/account/LogIn" element={<LogIn />} />
           <Route path="/account/SignUp" element={<SignUp />} />
         </Routes>
-      </main>
+      {/* </main> */}
       
     </div>
   )
