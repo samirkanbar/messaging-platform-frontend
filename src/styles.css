@@ -43,6 +43,67 @@
   color: #656565;
 }
 
+.footer {
+    background-color: #333; /* Dark background */
+    color: #fff; /* White text */
+    padding: 40px 20px 20px; /* Top, sides, bottom padding */
+    font-size: 14px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around; /* Distribute sections evenly */
+    max-width: 1200px; /* Optional: Constrain width */
+    margin: 0 auto;
+    flex-wrap: wrap; /* Allows sections to wrap on smaller screens */
+}
+
+.footer-section {
+    flex-basis: 25%; /* Give each section a base width */
+    padding: 10px;
+    min-width: 200px; /* Ensure a minimum size */
+}
+
+.footer-section h3 {
+    color: #00bcd4; /* A contrasting accent color */
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section li {
+    margin-bottom: 8px;
+}
+
+.footer a {
+    color: #ccc; /* Lighter link color */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer a:hover {
+    color: #fff; /* Highlight on hover */
+}
+
+.footer-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    display: block; /* Ensure it takes full width */
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    margin-top: 20px;
+    border-top: 1px solid #444; /* Separator line */
+    font-size: 12px;
+}
+
 .container {
   margin: 1rem;
   text-align: center;
@@ -152,10 +213,27 @@ html {
   text-align: center;
   
   max-width: 350px; 
+
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.step-box:hover {
+  transform: scale(1.05); 
+  
+  background-color: #eb6580;
+  color: white;
+
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); 
+  
+  z-index: 10; 
 }
 
 .step-box h4 {
   color: #333;
+}
+
+.step-box:hover h4 {
+  color: white;
 }
 
 .hero-container {

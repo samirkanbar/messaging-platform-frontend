@@ -4,9 +4,10 @@ import Hiw from "./pages/hiw"
 import About from "./pages/about/About"
 import FAQ from "./pages/FAQ"
 import Account from "./pages/account/Account"
-import SignUp from "./pages/account/SignUp"
+// import SignUp from "./pages/`account/SignUp"
 import LogIn from "./pages/account/LogIn"
 import Navbar from "./components/Navbar/Navbar"
+import Footer from "./components/Footer/Footer"
 
 function App() {
   return (
@@ -21,8 +22,9 @@ function App() {
           <Route path="/FAQ" element={<FAQ />} />
           <Route path="/account" element={<Account />} />
           <Route path="/account/LogIn" element={<LogIn />} />
-          <Route path="/account/SignUp" element={<SignUp />} />
+          {/* <Route path="/account/SignUp" element={<SignUp />} /> */}
         </Routes>
+        <Footer />
       {/* </main> */}
       
     </div>
