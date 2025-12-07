@@ -7,9 +7,9 @@ export default function Home() {
       <div className="hero-container">
         <div className="hero-sub-container">
           <h1 className="hero-title">
-            Say Goodbye, 
-            <br className="break-size"/>
-            Even When You're Gone.
+            Say Goodbye...
+            <br />
+            After You Are Gone
           </h1>
           <p className="hero-paragraph">
             Create a private list of people you want to send a final message to. 
@@ -17,7 +17,7 @@ export default function Home() {
           </p>
           <div className="hero-button-container">
             <div>
-              <Input placeholder="Email"/>
+              <Input placeholder="Your email"/>
             </div>
             <Button variant="outline">
               Get started!
@@ -38,7 +38,7 @@ export default function Home() {
             </div>
 
             <div className="step-box">
-              <h4 className="text-xl font-semibold mb-2">2. Designate a Dependent</h4>
+              <h4 className="text-xl font-semibold mb-2">2. Designate a Representative</h4>
               <p>Choose a trusted person who will be responsible for triggering the message delivery upon verification of your passing.</p>
             </div>
 

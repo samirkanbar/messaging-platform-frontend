@@ -263,6 +263,39 @@ html {
   width: 100%; */
 }
 
+@keyframes slide-animation {
+  /* 1. Start: Slide 1 visible */
+  0% { transform: translateX(0); }
+  
+  /* 2. Show Slide 2 */
+  33% { transform: translateX(-100%); } 
+  
+  /* 3. Show Slide 3 (The final visible position) */
+  66% { transform: translateX(-200%); }
+    
+  /* 4. Hold the final position right up to the end */
+  99.99% { transform: translateX(-200%); } 
+
+  /* 5. CRITICAL JUMP: At 100%, we explicitly go back to the start position. 
+     Since the 'linear' timing function applies, this causes a jarring jump, 
+     but it eliminates the blank space. */
+  100% { transform: translateX(0); } 
+}
+
+.carousel-track {
+    width: 300%; 
+
+    animation: slide-animation 25s linear infinite normal; 
+}
+
+.carousel-window {
+    max-width: 800px;
+}
+
+.carousel-slide {
+    width: 33.333%; 
+}
+
 @theme inline {
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);

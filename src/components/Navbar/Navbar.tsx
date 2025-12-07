@@ -9,7 +9,7 @@ export default function Navbar() {
       <ul>
         <CustomLink to="/hiw">How it works</CustomLink>
         <CustomLink to="/faq">FAQ</CustomLink>
-        <CustomLink to="/about">About</CustomLink>
+        <CustomLink to="/About">About</CustomLink>
         <CustomLink to="/account/LogIn">Account</CustomLink>
         {/* <li className="dropdown">
           <Link to="/account" className="dropdown-trigger">Account</Link>
