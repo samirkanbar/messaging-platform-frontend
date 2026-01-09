@@ -48,9 +48,11 @@ export default function Page() {
               </div>
               <Input id="password" type="password" required />
             </div>
-            <Button type="submit" className="w-full">
-              Login
-            </Button>
+            <Link to="/Dashboard" target="_blank" rel="noopener noreferrer">
+              <Button type="submit" className="w-full">
+                Login
+              </Button>
+            </Link>
             <Button variant="outline" className="w-full">
               Login with Google
             </Button>
