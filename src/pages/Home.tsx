@@ -34,7 +34,7 @@ export default function Home() {
             
             <div className="step-box">
               <h4 className="text-xl font-semibold mb-2">1. Create Your List</h4>
-              <p>Securely write your messages and compile the list of recipients. You remain in full control to edit and update them anytime.</p>
+              <p>Securely write your messages and compile a list of recipients. You remain in full control to edit and update the list at anytime.</p>
             </div>
 
             <div className="step-box">
@@ -44,7 +44,7 @@ export default function Home() {
 
             <div className="step-box">
               <h4 className="text-xl font-semibold mb-2">3. Messages Delivered</h4>
-              <p>After dependent verification, your messages are automatically sent to your list, delivering your final goodbyes.</p>
+              <p>After the representative's verification, your messages are automatically sent to your list, delivering your final goodbyes.</p>
             </div>
 
           </div>

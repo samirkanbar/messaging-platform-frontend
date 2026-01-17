@@ -4,7 +4,7 @@ export default function Hiw() {
   const steps = [
     {
       number: "01",
-      title: "Create Your Sanctuary",
+      title: "Create Your Message(s)",
       description: "Sign up and build your private list of loved ones. This is your safe space to draft heartfelt messages, share final thoughts, or simply say the things you never got to say.",
       imageLabel: "Illustration of a secure user dashboard"
     },
@@ -35,7 +35,7 @@ export default function Hiw() {
         <div className="text-center mb-16">
           <h2 className="text-base font-semibold text-blue-600 uppercase tracking-wide">Process</h2>
           <p className="mt-2 text-4xl font-extrabold text-gray-900 sm:text-5xl">
-            Saying goodbye, made simple.
+            Saying goodbye... made simple.
           </p>
           <p className="mt-4 max-w-2xl text-xl text-gray-500 mx-auto">
             We ensure your final messages are delivered exactly as you intended, giving you and your loved ones peace of mind.
