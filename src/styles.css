@@ -184,18 +184,26 @@ html {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   font-size: 85px;
   font-weight: bold;
+  text-align: center;
   color: #FFF;
+  align-items: center;
+  justify-content: center;
 }
 
 .hero-paragraph {
   color: #FFF;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  font-size: large;
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+  font-size: xx-large;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .hero-header {
   color: #000;
   font-size: 50px;
+  align-items: center;
+  justify-content: center;
 }
 
 .break-size {
@@ -205,14 +213,14 @@ html {
 .step-box {
   flex: 1; 
 
-  background-color: #eb658060;
+  background-color: #eb6580c8;
   border: 1px solid #e0e0e0;
   border-radius: 20px;
   padding: 20px;
   
   text-align: center;
   
-  max-width: 350px; 
+  max-width: 380px; 
 
   transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
 }
@@ -229,11 +237,13 @@ html {
 }
 
 .step-box h4 {
-  color: #333;
+  color: #FFF;
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .step-box:hover h4 {
   color: white;
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .hero-container {
@@ -244,7 +254,9 @@ html {
   background-size: cover;
   background-position: 50% -250px;
   background-attachment: fixed;
-  height: 700px;
+  height: 900px;
+  align-items: center;
+  justify-content: center;
 }
 
 .hero-button-container {
@@ -259,6 +271,7 @@ html {
   flex-direction: column;
   align-items: start;
   justify-content: center;
+  align-items: center;
   /* max-width: 900px;
   width: 100%; */
 }

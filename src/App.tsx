@@ -8,6 +8,8 @@ import LogIn from "./pages/account/LogIn"
 import Navbar from "./components/Navbar/Navbar"
 import Footer from "./components/Footer/Footer"
 import Dashboard from "./pages/Dashboard"
+import SignupPage from "./pages/account/SignUp"
+import Pricing from "./pages/Pricing"
 
 const PublicLayout = () => (
   <div className="flex flex-col min-h-svh">
@@ -27,8 +29,10 @@ function App() {
         <Route path="/hiw" element={<Hiw />} />
         <Route path="/About" element={<About />} />
         <Route path="/FAQ" element={<FAQ />} />
+        <Route path="/Pricing" element={<Pricing />} />
         <Route path="/account" element={<Account />} />
         <Route path="/account/LogIn" element={<LogIn />} />
+        <Route path="/account/SignUp" element={<SignupPage />} />
         <Route path="*" element={<h1>404: PATH NOT FOUND</h1>} />
       </Route>
 

@@ -48,13 +48,15 @@ export default function About() {
           <h2 className="text-3xl font-bold mb-4"> Trust/Security</h2>
           <p className="text-xl leading-relaxed">
             At SayGoodbyes.com, trust is our foundation, and security is our foremost commitment. 
-            We understand that entrusting us with your final, most sensitive communications requires absolute confidence. 
-            All messages are stored using industry-standard encryption and protected by robust security protocols, 
-            ensuring that your privacy is maintained at the highest level while you are alive. 
-            Our system is designed with a strict dependent verification process, requiring multi-step authentication and often third-party 
-            confirmation to ensure that your messages are never sent prematurely or to the wrong person. We pledge that 
-            your carefully composed words will remain secure, private, and reliably delivered only when the pre-planned c
-            onditions of your passing are officially met.
+            We understand that entrusting us with your final, most sensitive communications requires absolute confidence.
+            <br />
+            Our system is designed with a strict dependent-verification process requiring multi-step authentication and often third-party 
+            confirmation to ensure that your messages are never sent prematurely or to the wrong person.
+            All messages and information are stored using industry-standard encryption and protected by robust security protocols... 
+            ensuring that your privacy is maintained at the highest level. <br />
+            We pledge that 
+            your carefully composed words, will remain secure, private, and reliably delivered only when your pre-planned conditions 
+            are officially met.
           </p>
         </div>
         <div className="flex flex-1 p-4 justify-center align-center">

@@ -5,13 +5,13 @@ export default function Hiw() {
     {
       number: "01",
       title: "Create Your Message(s)",
-      description: "Sign up and build your private list of loved ones. This is your safe space to draft heartfelt messages, share final thoughts, or simply say the things you never got to say.",
+      description: "Sign up and build your private list of loved ones. This is your safe space to draft heartfelt messages to say the things you never got to say, or you can use our suggested message template.",
       imageLabel: "Illustration of a secure user dashboard"
     },
     {
       number: "02",
       title: "Appoint a Trusted Guardian",
-      description: "Assign a 'Dependent' or 'Legacy Contact.' This is the person you trust to notify the system when you pass. They won't see your messages—only the list of people to contact.",
+      description: "Assign a 'Dependent' or 'Legacy Contact.' This is the person you trust to notify the system when you pass. They won't see your messages and cannot change the list of people to contact.",
       imageLabel: "Icon showing two hands connecting or a shield"
     },
     {
@@ -22,7 +22,7 @@ export default function Hiw() {
     },
     {
       number: "04",
-      title: "Peace of Mind, Delivered",
+      title: "Peace of Mind... Delivered",
       description: "When the time comes, your Guardian activates your account. We handle the delivery via email or text, ensuring your final words reach the right people instantly.",
       imageLabel: "Visual of a paper plane or a heart being sent"
     }
@@ -33,12 +33,11 @@ export default function Hiw() {
       <div className="max-w-7xl mx-auto">
         
         <div className="text-center mb-16">
-          <h2 className="text-base font-semibold text-blue-600 uppercase tracking-wide">Process</h2>
           <p className="mt-2 text-4xl font-extrabold text-gray-900 sm:text-5xl">
             Saying goodbye... made simple.
           </p>
-          <p className="mt-4 max-w-2xl text-xl text-gray-500 mx-auto">
-            We ensure your final messages are delivered exactly as you intended, giving you and your loved ones peace of mind.
+          <p className="mt-4 max-w-2xl text-3xl text-gray-500 mx-auto">
+            We ensure that your final messages are delivered exactly as you intended, giving you and your loved ones peace of mind.
           </p>
         </div>
 
@@ -56,10 +55,10 @@ export default function Hiw() {
                   <span className="text-5xl font-black text-gray-100 absolute -top-10 left-0 -z-10 sm:relative sm:top-0 sm:block">
                     {step.number}
                   </span>
-                  <h3 className="text-2xl font-bold text-gray-900 mb-3">
+                  <h3 className="text-3xl font-bold text-gray-900 mb-3">
                     {step.title}
                   </h3>
-                  <p className="text-lg text-gray-600 leading-relaxed">
+                  <p className="text-xl text-gray-600 leading-relaxed">
                     {step.description}
                   </p>
                 </div>

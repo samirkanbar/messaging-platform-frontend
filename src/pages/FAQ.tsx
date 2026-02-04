@@ -11,19 +11,19 @@ const faqData = [
   },
   {
     question: "Is my data secure and private?",
-    answer: "Absolutely. All messages are encrypted at rest. We use industry-standard security protocols to ensure that your private thoughts remain private until the moment they are meant to be shared."
+    answer: "Absolutely. All messages are encrypted. We use industry-standard security protocols to ensure that your private thoughts remain private until the moment they are meant to be shared."
   },
   {
     question: "What happens if my Guardian passes away before me?",
-    answer: "You can update your Guardian at any time. We also recommend appointing a secondary contact or setting up 'check-in' reminders to ensure your account always has a path to activation."
+    answer: "You can update your Guardian assignee at any time. We also recommend appointing a secondary contact. The system sends check-in emails as frequent as you'd like to ensure that you and your guardian are well."
   },
   {
     question: "Can I edit my messages after I save them?",
-    answer: "Yes, your list is living. You can add new people, remove contacts, or rewrite your messages as your life and relationships evolve."
+    answer: "Yes. You can add new people, remove contacts, or rewrite your messages as your life and relationships evolve."
   },
   {
     question: "Is there a cost to use SayGoodbyes?",
-    answer: "We offer a free tier for basic needs. For users who want to store larger files (like video goodbyes) or have multiple guardians, we offer a premium legacy plan."
+    answer: "Yes. We charge a small fee for a big service! Our one time, all-inclusive cost is $XXX."
   }
 ];
 

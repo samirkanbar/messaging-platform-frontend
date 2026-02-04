@@ -4,6 +4,8 @@ const testimonials = [
   { quote: "Saygoodbyes.com is a true gift! It makes the difficult passing of a loved one MUCH easier.", author: "— Michael B." },
   { quote: "I am truly grateful for Saygoodbyes.com. It has made my pre-death planning a simpler, more personal task.", author: "— Sarah T." },
   { quote: "We are grateful for Saygoodbyes, which has saved us much pain and heartache. Thank you!", author: "— James P." },
+  { quote: "Thank you for providing a way to ease the responsibilities on my loved ones when I pass on", author: "— Allen R." },
+  { quote: "This is such a great idea! I would not have thought of it! Thanks.", author: "— Jules E." },
 ];
 
 const SLIDE_DURATION = 5000;
