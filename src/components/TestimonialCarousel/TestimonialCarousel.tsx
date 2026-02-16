@@ -25,7 +25,7 @@ export default function TestimonialCarousel() {
 
   return (
     <section className="py-16 bg-gray-50 overflow-hidden">
-      <h3 className="text-center text-4xl font-bold mb-10">Kind Words from Our Users</h3>
+      <h3 className="text-center text-4xl font-bold mb-10 text-[#2a5df7]">Kind Words from Our Users</h3>
       
       <div className="mx-auto max-w-4xl overflow-hidden">
         

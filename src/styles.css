@@ -4,18 +4,46 @@
 @custom-variant dark (&:is(.dark *));
 
 .nav {
-  background-color: #FFF;
-  color: white;
+  /* Glassmorphism Effect */
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  
+  /* Layout */
   display: flex;
   justify-content: space-between;
-  align-items: stretch;
-  gap: 2rem;
-  padding: 0 1rem;
+  align-items: center;
+  padding: 0.75rem 2rem;
+  
+  /* Border & Shadow */
+  border-bottom: 1px solid rgba(42, 93, 247, 0.1);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
 
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 1000;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  color: #333;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  font-size: 0.95rem;
+}
+
+.nav-links a:hover {
+  color: #2a5df7; /* Highlight with your blue */
 }
 
 .nav > ul {
@@ -129,7 +157,12 @@ html {
 }
 
 .site-title {
-  font-size: 2rem;
+  font-size: 1.5rem;
+  font-weight: 800;
+  letter-spacing: -0.025em;
+  /* Using your blue color here */
+  color: #2a5df7; 
+  text-decoration: none;
 }
 
 .dropdown {

@@ -3,19 +3,19 @@ import React, { useState } from 'react';
 const faqData = [
   {
     question: "How does the system know when I've passed away?",
-    answer: "The system relies on your appointed 'Guardian' (the dependent you choose). Once they log in and provide notification, the system begins the process of delivering your saved messages. We recommend choosing someone you trust implicitly."
+    answer: "Saygoogbyes.com's system relies on your designated representative (the person you choose. Once they login and provide notification, the system begins to process of delivering your saved messages. We recommend choosing someone you trust implicitly."
   },
   {
     question: "Can my Guardian read my messages?",
-    answer: "No. Privacy is our core pillar. Your Guardian only has the authority to trigger the delivery; they cannot open, read, or edit the contents of the messages you've written for others."
+    answer: "No. Privacy is our core pillar. Your representative only has the authority to trigger the delivery. They cannot open, read or edit the contents of the messages you have written for others. The system will trigger the delivery of an additional private message to anyone on your list that you select."
   },
   {
     question: "Is my data secure and private?",
-    answer: "Absolutely. All messages are encrypted. We use industry-standard security protocols to ensure that your private thoughts remain private until the moment they are meant to be shared."
+    answer: "Absolutely. All answers are encrypted. We use the highest industry- standard security protocols to ensure that your private thoughts remain private until the moment they are meant to be shared."
   },
   {
     question: "What happens if my Guardian passes away before me?",
-    answer: "You can update your Guardian assignee at any time. We also recommend appointing a secondary contact. The system sends check-in emails as frequent as you'd like to ensure that you and your guardian are well."
+    answer: "You can update your.Representative assignee at any time. We also suggest that you appoint a secondary contact. The system sends check-in emails as frequently as you would like to ensure that you and your Representative are well."
   },
   {
     question: "Can I edit my messages after I save them?",
