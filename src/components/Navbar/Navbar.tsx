@@ -7,9 +7,9 @@ export default function Navbar() {
         SayGoodbyes.com
       </Link>
       <ul>
-        <CustomLink to="/hiw">How it works</CustomLink>
-        <CustomLink to="/faq">FAQ</CustomLink>
+        {/* <CustomLink to="/hiw">How it works</CustomLink> */}
         <CustomLink to="/About">About</CustomLink>
+        <CustomLink to="/faq">FAQ</CustomLink>
         <CustomLink to="/account/LogIn">Account</CustomLink>
         {/* <li className="dropdown">
           <Link to="/account" className="dropdown-trigger">Account</Link>

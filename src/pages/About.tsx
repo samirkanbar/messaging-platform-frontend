@@ -1,26 +1,65 @@
+import { motion } from 'framer-motion';
 import graveyard from '../assets/images/sebastien-gabriel--IMlv9Jlb24-unsplash.jpg';
 import dove from '../assets/images/awmleer-6XcziMmkNgQ-unsplash.jpg'
 import sunset from '../assets/images/gwyn-hay-w9sZeXnQi7U-unsplash.jpg'
 import TestimonialCarousel from '@/components/TestimonialCarousel/TestimonialCarousel';
 
 export default function About() {
-  return (
-    <div className="bg-white text-gray-900 font-sans pt-24 pb-16 overflow-x-hidden">
+  const spotlight = {
+    initial: { opacity: 0.5, scale: 0.98, filter: "blur(2px)" },
+    whileInView: { opacity: 1, scale: 1, filter: "blur(0px)" },
+    viewport: { once: false, amount: 0.2 }, 
+    transition: { duration: 0.6, ease: "easeOut" }
+  };
 
-      <section className="w-full pt-12 pb-8 flex flex-col items-center justify-center text-center">
+  return (
+    /* Changed main background to #fdeef1 */
+    <div className="bg-[#fdeef1] text-gray-900 font-sans pt-8 pb-4 overflow-x-hidden min-h-screen">
+
+      {/* Header - mt-10 for top spacing */}
+      <section className="w-full mt-10 pt-4 pb-2 flex flex-col items-center justify-center text-center">
         <h1 className="text-5xl md:text-6xl font-black tracking-tight" style={{ color: '#2a5df7' }}>
           About Us
         </h1>
       </section>
       
-      {/* --- SECTION 1: MISSION AND VISION (Image Right) --- */}
-      <section className="w-full py-16 flex justify-center">
-        <div className="container max-w-6xl px-6 flex flex-col md:flex-row items-center gap-12"> 
-          <div className="flex-[3] text-center md:text-left space-y-4">
-            <h2 className="text-4xl font-black tracking-tight" style={{ color: '#2a5df7' }}>
-              Our Mission and Vision
+      {/* SECTION 1: Our Story - Now #fdeef1 */}
+      <motion.section {...spotlight} className="w-full py-6 flex justify-center bg-[#fdeef1]">
+        <div className="container max-w-6xl px-6 flex flex-col md:flex-row items-center gap-6"> 
+          <div className="flex-[3] text-center md:text-left space-y-1">
+            <h2 className="text-3xl md:text-4xl font-black tracking-tight" style={{ color: '#2a5df7' }}>
+              Our Story
             </h2>
-            <p className="text-lg leading-relaxed text-gray-700">
+            <p className="text-lg leading-snug text-gray-800 font-medium">
+              Saygoodbyes.com enables its subscribers to inform a selected 
+              group of family, friends, associates and contacts in the event 
+              of the subscriber’s death. Saygoodbyes.com enables older people 
+              to avoid the difficult emotions associated with fearing that they 
+              may pass away without their acquaintances even knowing. It helps 
+              guide their loved ones as to who they should inform of the passing, 
+              funeral arrangements, etc.
+            </p>
+          </div>
+          <div className="flex-[2] w-full flex justify-center">
+            <img src={graveyard} className="w-full rounded-2xl shadow-lg object-cover aspect-[16/9]" alt="Mission" />
+          </div>
+        </div>
+      </motion.section>
+
+      {/* SECTION 2: Our Vision - #fdeef1 with borders */}
+      <motion.section 
+        {...spotlight}
+        className="w-full py-6 bg-[#fdeef1] flex justify-center border-y border-[#fadce1]"
+      >
+        <div className="container max-w-6xl px-6 flex flex-col-reverse md:flex-row items-center gap-6">
+          <div className="flex-[2] w-full flex justify-center">
+            <img src={dove} className="w-full max-w-[240px] rounded-full border-4 border-white shadow-xl aspect-square object-cover" alt="Story" />
+          </div>
+          <div className="flex-[3] text-center md:text-left space-y-1">
+            <h2 className="text-3xl md:text-4xl font-black tracking-tight" style={{ color: '#eb6580' }}>
+              Our Vision
+            </h2>
+            <p className="text-lg leading-snug text-gray-800 font-medium">
               The death of a Saygoodbyes.com subscriber triggers a 
               process by which all contacts on the subscribers list receive 
               notification of the death, funeral arrangements, (where available), 
@@ -31,43 +70,17 @@ export default function About() {
               and that they will say a proper goodbye to the community that populated their life.
             </p>
           </div>
-          <div className="flex-[2] w-full flex justify-center">
-            <img src={graveyard} className="w-full rounded-2xl shadow-lg object-cover aspect-[4/3]" alt="Mission" />
-          </div>
         </div>
-      </section>
+      </motion.section>
 
-      {/* --- SECTION 2: OUR STORY (Image Left) --- */}
-      <section className="w-full py-16 bg-gray-50 flex justify-center border-y border-gray-100">
-        <div className="container max-w-6xl px-6 flex flex-col-reverse md:flex-row items-center gap-12">
-          <div className="flex-[2] w-full flex justify-center">
-            <img src={dove} className="w-full max-w-sm rounded-full border-8 border-white shadow-xl aspect-square object-cover" alt="Story" />
-          </div>
-          <div className="flex-[3] text-center md:text-left space-y-4">
-            <h2 className="text-4xl font-black tracking-tight" style={{ color: '#eb6580' }}>
-              Our Story
-            </h2>
-            <p className="text-lg leading-relaxed text-gray-700">
-              Saygoodbyes.com enables its subscribers to inform a selected 
-              group of family, friends, associates and contacts in the event 
-              of the subscriber’s death. Saygoodbyes.com enables older people 
-              to avoid the difficult emotions associated with fearing that they 
-              may pass away without their acquaintances even knowing. It helps 
-              guide their loved ones as to who they should inform of the passing, 
-              funeral arrangements, etc.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* --- SECTION 3: TRUST/SECURITY (Image Right) --- */}
-      <section className="w-full py-16 flex justify-center">
-        <div className="container max-w-6xl px-6 flex flex-col md:flex-row items-center gap-12"> 
-          <div className="flex-[3] text-center md:text-left space-y-4">
-            <h2 className="text-4xl font-black tracking-tight" style={{ color: '#2a5df7' }}>
+      {/* SECTION 3: Trust/Security - Now #fdeef1 */}
+      <motion.section {...spotlight} className="w-full py-6 flex justify-center bg-[#fdeef1]">
+        <div className="container max-w-6xl px-6 flex flex-col md:flex-row items-center gap-6"> 
+          <div className="flex-[3] text-center md:text-left space-y-1">
+            <h2 className="text-3xl md:text-4xl font-black tracking-tight" style={{ color: '#2a5df7' }}>
               Trust/Security
             </h2>
-            <p className="text-lg leading-relaxed text-gray-700">
+            <p className="text-lg leading-snug text-gray-800 font-medium">
               At SayGoodbyes.com, trust is our foundation, and security is our foremost commitment. 
               We understand that entrusting us with your final, most sensitive communications requires absolute confidence.
               <br /><br />
@@ -81,23 +94,23 @@ export default function About() {
             </p>
           </div>
           <div className="flex-[2] w-full flex justify-center">
-            <img src={sunset} className="w-full rounded-2xl shadow-lg object-cover aspect-[4/3]" alt="Security" />
+            <img src={sunset} className="w-full rounded-2xl shadow-lg object-cover aspect-[16/9]" alt="Security" />
           </div>
         </div>
-      </section>
+      </motion.section>
 
-      {/* --- TESTIMONIALS SECTION (Full Width & Centered) --- */}
-      <section className="w-full py-20 bg-gray-900 text-white flex flex-col items-center">
+      {/* TESTIMONIALS SECTION - Dark footer preserved for contrast */}
+      <section className="w-full py-10 bg-gray-900 text-white flex flex-col items-center">
         <div className="container w-full max-w-screen-xl px-6 text-center">
-          <h3 className="text-[#eb6580] uppercase tracking-[0.3em] font-bold text-sm mb-4">
+          <h3 className="text-[#eb6580] uppercase tracking-[0.3em] font-bold text-xs mb-1">
             Testimonials
           </h3>
-          <h2 className="text-3xl md:text-4xl font-bold mb-12">
+          <h2 className="text-2xl md:text-3xl font-bold mb-4">
             Shared Experiences
           </h2>
           
           <div className="w-full flex justify-center">
-             <div className="w-full">
+             <div className="w-full max-w-4xl">
                 <TestimonialCarousel />
              </div>
           </div>

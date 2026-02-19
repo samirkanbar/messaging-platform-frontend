@@ -15,16 +15,16 @@ export default function Hiw() {
       accent: "#eb6580" // Brand Red
     },
     {
-      number: "03",
+      number: "02",
       title: "Write at Your Own Pace",
       description: "Add emails, phone numbers, and personalized notes. You can update these at any time. Your data is encrypted and remains private until the moment it's needed.",
-      accent: "#2a5df7"
+      accent: "#eb6580"
     },
     {
-      number: "04",
+      number: "03",
       title: "Peace of Mind... Delivered",
       description: "When the time comes, your Guardian activates your account. We handle the delivery via email or text, ensuring your final words reach the right people instantly.",
-      accent: "#eb6580"
+      accent: "#2a5df7"
     }
   ];
 

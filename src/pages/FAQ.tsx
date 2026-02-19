@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 const faqData = [
   {
     question: "How does the system know when I've passed away?",
-    answer: "Saygoogbyes.com's system relies on your designated representative (the person you choose. Once they login and provide notification, the system begins to process of delivering your saved messages. We recommend choosing someone you trust implicitly."
+    answer: "Saygoodbyes.com's system relies on your designated representative (the person you choose). Once they login and provide notification, the system begins the process of delivering your saved messages. We recommend choosing someone you trust implicitly."
   },
   {
     question: "Can my Guardian read my messages?",
@@ -11,11 +11,11 @@ const faqData = [
   },
   {
     question: "Is my data secure and private?",
-    answer: "Absolutely. All answers are encrypted. We use the highest industry- standard security protocols to ensure that your private thoughts remain private until the moment they are meant to be shared."
+    answer: "Absolutely. All answers are encrypted. We use the highest industry-standard security protocols to ensure that your private thoughts remain private until the moment they are meant to be shared."
   },
   {
     question: "What happens if my Guardian passes away before me?",
-    answer: "You can update your.Representative assignee at any time. We also suggest that you appoint a secondary contact. The system sends check-in emails as frequently as you would like to ensure that you and your Representative are well."
+    answer: "You can update your Representative assignee at any time. We also suggest that you appoint a secondary contact. The system sends check-in emails as frequently as you would like to ensure that you and your Representative are well."
   },
   {
     question: "Can I edit my messages after I save them?",
@@ -23,7 +23,7 @@ const faqData = [
   },
   {
     question: "Is there a cost to use SayGoodbyes?",
-    answer: "Yes. We charge a small fee for a big service! Our one time, all-inclusive cost is $XXX."
+    answer: "Yes. We charge a small fee for a big service! Our one-time, all-inclusive cost is $XXX."
   }
 ];
 
@@ -35,47 +35,44 @@ export default function FAQ() {
   };
 
   return (
-    <div className="bg-gray-50 py-16 px-6 lg:py-24">
+    <div className="bg-[#fff5f7] py-16 px-6 lg:py-24 min-h-screen">
       <div className="max-w-3xl mx-auto">
         
-        {/* Header */}
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+          <h2 className="text-4xl mt-10 md:text-5xl font-black tracking-tight" style={{ color: '#2a5df7' }}>
             Frequently Asked Questions
           </h2>
-          <p className="mt-4 text-lg text-gray-600">
+          <p className="mt-4 text-lg text-gray-700 font-medium">
             Everything you need to know about securing your legacy.
           </p>
         </div>
 
-        {/* FAQ List */}
-        <div className="space-y-4">
+        <div className="space-y-3">
           {faqData.map((item, index) => (
             <div 
               key={index} 
-              className="bg-white border border-gray-200 rounded-xl overflow-hidden transition-all duration-200"
+              className="bg-white border border-[#fadce1] rounded-2xl overflow-hidden shadow-sm transition-all duration-200"
             >
               <button
                 onClick={() => toggleFAQ(index)}
-                className="w-full flex items-center justify-between p-5 text-left focus:outline-none"
+                className="w-full flex items-center justify-between p-5 text-left focus:outline-none group"
               >
-                <span className="text-lg font-medium text-gray-900">
+                <span className="text-lg font-bold text-gray-900 group-hover:text-[#2a5df7] transition-colors">
                   {item.question}
                 </span>
-                <span className={`ml-6 flex-shrink-0 transition-transform duration-200 ${activeIndex === index ? 'rotate-180' : ''}`}>
-                  <svg className="h-6 w-6 text-blue-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="19 9l-7 7-7-7" />
+                <span className={`ml-6 flex-shrink-0 transition-transform duration-300 ${activeIndex === index ? 'rotate-180' : ''}`}>
+                  <svg className="h-6 w-6 text-[#eb6580]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M19 9l-7 7-7-7" />
                   </svg>
                 </span>
               </button>
 
-              {/* Smooth Expand/Collapse */}
               <div 
                 className={`px-5 overflow-hidden transition-all duration-300 ease-in-out ${
-                  activeIndex === index ? 'max-h-96 pb-5' : 'max-h-0'
+                  activeIndex === index ? 'max-h-96 pb-6' : 'max-h-0'
                 }`}
               >
-                <p className="text-gray-600 leading-relaxed">
+                <p className="text-xl text-gray-800 leading-snug font-medium border-t border-[#fff5f7] pt-4">
                   {item.answer}
                 </p>
               </div>
@@ -83,15 +80,16 @@ export default function FAQ() {
           ))}
         </div>
 
-        {/* Still have questions? */}
-        <div className="mt-16 text-center p-8 bg-white rounded-2xl border border-gray-100 shadow-sm">
-          <h3 className="text-xl font-semibold text-gray-900">Still have questions?</h3>
-          <p className="text-gray-500 mt-2">
+        {/* Still have questions? - Using the pink accent background */}
+        <div className="mt-16 text-center p-8 bg-[#fdeef1] rounded-3xl border border-[#fadce1] shadow-sm">
+          <h3 className="text-xl font-bold text-gray-900">Still have questions?</h3>
+          <p className="text-gray-700 mt-2 font-medium">
             We're here to help you through this process with care.
           </p>
           <a 
             href="/contact" 
-            className="mt-6 inline-block text-blue-600 font-bold hover:text-blue-700 transition-colors"
+            className="mt-6 inline-block font-black uppercase tracking-wider text-sm transition-colors"
+            style={{ color: '#eb6580' }}
           >
             Contact our support team →
           </a>
