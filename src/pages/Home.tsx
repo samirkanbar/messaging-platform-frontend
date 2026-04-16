@@ -58,7 +58,7 @@ export default function Home() {
               <div className="text-5xl font-black mb-4 transition-colors group-hover:text-white" style={{ color: '#eb6580' }}>2</div>
               <h3 className="text-3xl font-bold mb-4">Designate Access</h3>
               <p className="text-gray-300 leading-relaxed text-xl">
-                Appoint a trusted dependent who will be granted access to trigger your final delivery when the time is right.
+                Appoint a trusted representative who will be granted access to trigger your final message delivery when the time is right.
               </p>
             </div>
 

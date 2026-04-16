@@ -11,7 +11,7 @@ export default function Footer() {
             SayGoodbyes.com
           </Link>
           <p>
-            Plan your goodbyes, securely, and simply, ensuring that your final words are delivered.
+            Plan your goodbyes securely and simply, ensuring that your final messages are delivered.
           </p>
         </div>
 
